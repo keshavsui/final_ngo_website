@@ -1,65 +1,79 @@
 import React from "react";
 
-const AboutPage = () => {
+const AboutUs = () => {
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className="bg-gradient-to-br from-yellow-100 via-orange-200 to-red-300 text-gray-900">
       {/* Hero Section */}
-      <div className="bg-blue-700 text-white text-center py-16 px-6">
-        <h1 className="text-4xl font-bold">About Our NGO</h1>
-        <p className="mt-4 text-lg max-w-2xl mx-auto">
-          Empowering communities through sustainable solutions, education, and support.
+      <div className="text-center py-24 px-6">
+        <h1 className="text-5xl font-bold text-orange-800">About Our NGO</h1>
+        <p className="mt-4 text-lg max-w-3xl mx-auto text-gray-700">
+          We are committed to bringing positive change through education, healthcare, and food distribution.
         </p>
       </div>
 
-      {/* Mission & Vision Section */}
-      <div className="container mx-auto px-6 py-12">
-        <div className="bg-white p-8 shadow-lg rounded-lg">
-          <h2 className="text-3xl font-semibold text-center text-blue-700">Our Mission</h2>
-          <p className="mt-4 text-gray-700 text-center">
-            To provide essential resources and opportunities to underprivileged communities, 
-            ensuring a better future for all.
-          </p>
-        </div>
-
-        <div className="bg-white p-8 shadow-lg rounded-lg mt-8">
-          <h2 className="text-3xl font-semibold text-center text-blue-700">Our Vision</h2>
-          <p className="mt-4 text-gray-700 text-center">
-            A world where every individual has equal access to education, healthcare, 
-            and a dignified life.
-          </p>
+      {/* Images Section */}
+      <div className="container mx-auto px-6 py-8">
+        <h2 className="text-3xl font-semibold text-orange-800 text-center">Our Impact</h2>
+        <div className="grid md:grid-cols-3 gap-6 mt-6">
+          <img src="/images/ngo1.jpg" alt="NGO Volunteers Teaching Kids" className="w-full h-60 object-cover rounded-lg shadow-md"/>
+          <img src="/images/ngo2.jpg" alt="Food Distribution to the Needy" className="w-full h-60 object-cover rounded-lg shadow-md"/>
+          <img src="/images/ngo3.jpg" alt="Medical Aid Provided by NGOs" className="w-full h-60 object-cover rounded-lg shadow-md"/>
         </div>
       </div>
 
-      {/* Team Section (Optional) */}
-      <div className="container mx-auto px-6 py-12">
-        <h2 className="text-3xl font-semibold text-center text-blue-700">Meet Our Team</h2>
-        <p className="text-center text-gray-600 mt-4">
-          Dedicated individuals working together for a better future.
+      {/* Our Mission Section */}
+      <div className="container mx-auto px-6 py-12 text-center">
+        <h2 className="text-3xl font-semibold text-orange-800">Our Mission</h2>
+        <p className="mt-4 text-gray-700 max-w-2xl mx-auto">
+          We strive to uplift underprivileged communities by providing access to education, healthcare, and food security programs.
         </p>
-        <div className="flex flex-wrap justify-center gap-6 mt-6">
-          <div className="bg-white p-6 shadow-lg rounded-lg w-60 text-center">
-            <img src="https://via.placeholder.com/100" alt="Team Member" className="mx-auto rounded-full" />
-            <h3 className="mt-3 font-semibold">John Doe</h3>
-            <p className="text-sm text-gray-600">Founder & CEO</p>
+      </div>
+
+      {/* Our Vision */}
+      <div className="bg-white py-16 text-center">
+        <h2 className="text-3xl font-semibold text-red-700">Our Vision</h2>
+        <p className="mt-4 text-gray-700 max-w-2xl mx-auto">
+          We envision a world where everyone has equal opportunities to live a life of dignity and self-sufficiency.
+        </p>
+      </div>
+
+      {/* Team Section */}
+      <div className="bg-red-200 py-16 text-center">
+        <h2 className="text-3xl font-semibold text-red-800">Meet Our Team</h2>
+        <p className="mt-4 text-gray-700 max-w-2xl mx-auto">
+          Our dedicated team of volunteers and professionals work tirelessly to make a difference in society.
+        </p>
+        <div className="grid md:grid-cols-3 gap-8 mt-6 px-6">
+          <div className="bg-white p-6 shadow-lg rounded-lg text-center border-t-4 border-red-500">
+            <h3 className="text-2xl font-bold text-red-700">Jane Doe</h3>
+            <p className="text-gray-600 mt-2">Founder & CEO</p>
+            <img src="/images/team1.jpg" alt="Founder" className="w-24 h-24 mx-auto rounded-full mt-4"/>
           </div>
-          <div className="bg-white p-6 shadow-lg rounded-lg w-60 text-center">
-            <img src="https://via.placeholder.com/100" alt="Team Member" className="mx-auto rounded-full" />
-            <h3 className="mt-3 font-semibold">Jane Smith</h3>
-            <p className="text-sm text-gray-600">Operations Manager</p>
+          <div className="bg-white p-6 shadow-lg rounded-lg text-center border-t-4 border-orange-500">
+            <h3 className="text-2xl font-bold text-orange-700">John Smith</h3>
+            <p className="text-gray-600 mt-2">Director of Operations</p>
+            <img src="/images/team2.jpg" alt="Director" className="w-24 h-24 mx-auto rounded-full mt-4"/>
+          </div>
+          <div className="bg-white p-6 shadow-lg rounded-lg text-center border-t-4 border-yellow-500">
+            <h3 className="text-2xl font-bold text-yellow-700">Sarah Johnson</h3>
+            <p className="text-gray-600 mt-2">Head of Community Outreach</p>
+            <img src="/images/team3.jpg" alt="Community Head" className="w-24 h-24 mx-auto rounded-full mt-4"/>
           </div>
         </div>
       </div>
 
       {/* Call to Action */}
-      <div className="bg-blue-700 text-white text-center py-10">
-        <h2 className="text-3xl font-bold">Join Us & Make a Difference</h2>
-        <p className="mt-3 text-lg">Get involved today and help us change lives.</p>
-        <a href="/donate" className="mt-5 inline-block bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">
-          Donate Now
+      <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-center py-16 px-6">
+        <h2 className="text-3xl font-bold">Join Our Mission</h2>
+        <p className="mt-4 text-lg max-w-2xl mx-auto">
+          Whether through donations, volunteering, or spreading awareness, you can help bring real change.
+        </p>
+        <a href="/contact" className="mt-6 inline-block bg-red-700 text-white px-6 py-3 rounded-lg font-semibold text-lg hover:bg-red-800 transition">
+          Contact Us
         </a>
       </div>
     </div>
   );
 };
 
-export default AboutPage;
+export default AboutUs;
