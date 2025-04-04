@@ -15,9 +15,9 @@ const AboutUs = () => {
       <div className="container mx-auto px-6 py-8">
         <h2 className="text-3xl font-semibold text-orange-800 text-center">Our Impact</h2>
         <div className="grid md:grid-cols-3 gap-6 mt-6">
-          <img src="/images/ngo1.jpg" alt="NGO Volunteers Teaching Kids" className="w-full h-60 object-cover rounded-lg shadow-md"/>
-          <img src="/images/ngo2.jpg" alt="Food Distribution to the Needy" className="w-full h-60 object-cover rounded-lg shadow-md"/>
-          <img src="/images/ngo3.jpg" alt="Medical Aid Provided by NGOs" className="w-full h-60 object-cover rounded-lg shadow-md"/>
+          <img src="/images/teaching_stud.jpg" alt="NGO Volunteers Teaching Kids" className="w-full h-60 object-cover rounded-lg shadow-md"/>
+          <img src="/images/stud_praying.jpg" alt="Meditation Time" className="w-full h-60 object-cover rounded-lg shadow-md"/>
+          <img src="/images/sports_comp.jpg" alt="Sports Competition" className="w-full h-60 object-cover rounded-lg shadow-md"/>
         </div>
       </div>
 
@@ -25,7 +25,13 @@ const AboutUs = () => {
       <div className="container mx-auto px-6 py-12 text-center">
         <h2 className="text-3xl font-semibold text-orange-800">Our Mission</h2>
         <p className="mt-4 text-gray-700 max-w-2xl mx-auto">
-          We strive to uplift underprivileged communities by providing access to education, healthcare, and food security programs.
+        We strive to:<br/>
+        •Provide & share resources, goods, and technology to uplift communities<br/>
+        •Empower underprivileged children through education & support<br/>
+        •Work towards women empowerment & equal opportunities<br/>
+        •Help specially-abled children lead an independent life<br/>
+
+We believe in creating sustainable change by ensuring access to basic necessities and opportunities for growth.
         </p>
       </div>
 

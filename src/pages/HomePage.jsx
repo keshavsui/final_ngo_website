@@ -22,7 +22,21 @@ const HomePage = () => {
       <div className="container mx-auto px-6 py-16 text-center">
         <h2 className="text-4xl font-bold text-orange-800">Who We Are</h2>
         <p className="mt-4 text-gray-700 max-w-3xl mx-auto">
-          We are a non-profit organization dedicated to uplifting underprivileged communities by providing education, healthcare, and essential resources.
+        Rainbow Foundation is an  humanitarian organization founded in 2010 with a mission to alleviate human suffering and foster community development. We work in diverse areas such as:
+
+Rural Development
+
+Environmental Conservation
+
+Emergency Relief Work
+
+Water & Waste Management
+
+Public Health & Hygiene
+
+Our goal is to build a better future by providing education, healthcare, and empowerment to those in need.
+
+
         </p>
         <img src="/images/about.jpg" alt="NGO Volunteers" className="mt-6 w-full max-w-3xl mx-auto rounded-lg shadow-md" />
         <Link to="/about" className="mt-6 inline-block bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold text-lg hover:bg-orange-700 transition">
