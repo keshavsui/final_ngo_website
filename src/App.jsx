@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
 import DonationPage from "./pages/DonationPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
+import GoogleMapsLink from "./components/GoogleMapsLink"; // ✅ Import here
 
 const App = () => {
   return (
@@ -18,6 +19,12 @@ const App = () => {
           <Route path="/donate" element={<DonationPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
+
+        {/* ✅ You can place the map link anywhere here — or inside Footer.jsx or ContactPage */}
+        <div className="mt-8">
+          <h2 className="text-lg font-semibold">Our Location</h2>
+          <GoogleMapsLink />
+        </div>
       </div>
       <Footer />
     </Router>

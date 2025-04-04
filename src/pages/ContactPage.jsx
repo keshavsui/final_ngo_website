@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -7,6 +8,20 @@ const ContactPage = () => {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+  const GoogleMapsLink = () => {
+    return (
+      <a
+        href="https://www.google.com/maps?q=Rainbow+Foundation,+Mumbai"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-2 text-blue-600 hover:text-blue-800"
+      >
+        <FaMapMarkerAlt size={24} />
+        <span>View on Google Maps</span>
+      </a>
+    );
+  };
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -66,19 +81,11 @@ const ContactPage = () => {
           </form>
         </div>
 
-        {/* Google Map */}
-        <div className="mt-12">
-          <h2 className="text-2xl font-bold text-teal-800 mb-4">Our Location</h2>
-          <iframe
-            title="Google Maps"
-            className="w-full h-80 rounded-lg shadow-lg"
-            src={`https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=New+Delhi,India`}
-            allowFullScreen
-          ></iframe>
-        </div>
+        
       </div>
     </div>
   );
 };
 
 export default ContactPage;
+
