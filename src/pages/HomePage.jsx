@@ -6,7 +6,7 @@ const HomePage = () => {
     <div className="bg-gradient-to-b from-yellow-50 via-orange-100 to-red-200 text-gray-900">
       {/* Hero Section */}
       <div className="relative">
-        <img src="/images/hero.jpg" alt="Helping hands" className="w-full h-96 object-cover brightness-75" />
+        <img src="/images/bg_img.png" alt="Helping hands" className="w-full h-screen object-cover brightness-75" />
         <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-white text-center px-6">
           <h1 className="text-5xl font-bold drop-shadow-lg">Making a Difference, One Step at a Time</h1>
           <p className="mt-4 text-lg max-w-xl">
@@ -38,7 +38,7 @@ Our goal is to build a better future by providing education, healthcare, and emp
 
 
         </p>
-        <img src="/images/about.jpg" alt="NGO Volunteers" className="mt-6 w-full max-w-3xl mx-auto rounded-lg shadow-md" />
+        
         <Link to="/about" className="mt-6 inline-block bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold text-lg hover:bg-orange-700 transition">
           Learn More
         </Link>
@@ -49,7 +49,7 @@ Our goal is to build a better future by providing education, healthcare, and emp
         <h2 className="text-4xl font-bold text-red-700">Our Programs</h2>
         <div className="grid md:grid-cols-3 gap-8 mt-8 px-6">
           <div className="bg-orange-100 p-6 rounded-lg shadow-lg">
-            <img src="/images/education.jpg" alt="Education for children" className="w-full h-48 object-cover rounded-md" />
+            <img src="/images/teaching_stud.jpg" alt="Education for children" className="w-full h-48 object-cover rounded-md" />
             <h3 className="text-2xl font-semibold text-orange-800 mt-4">Education</h3>
             <p className="mt-2 text-gray-700">Providing quality education to underprivileged children for a brighter future.</p>
           </div>
@@ -59,7 +59,7 @@ Our goal is to build a better future by providing education, healthcare, and emp
             <p className="mt-2 text-gray-700">Ensuring no one goes hungry by distributing food to the needy.</p>
           </div>
           <div className="bg-yellow-100 p-6 rounded-lg shadow-lg">
-            <img src="/images/healthcare.jpg" alt="Healthcare support" className="w-full h-48 object-cover rounded-md" />
+            <img src="/images/health.jpg" alt="Healthcare support" className="w-full h-48 object-cover rounded-md" />
             <h3 className="text-2xl font-semibold text-yellow-800 mt-4">Healthcare</h3>
             <p className="mt-2 text-gray-700">Providing medical aid and support to underserved communities.</p>
           </div>

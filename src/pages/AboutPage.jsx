@@ -51,17 +51,17 @@ We believe in creating sustainable change by ensuring access to basic necessitie
         </p>
         <div className="grid md:grid-cols-3 gap-8 mt-6 px-6">
           <div className="bg-white p-6 shadow-lg rounded-lg text-center border-t-4 border-red-500">
-            <h3 className="text-2xl font-bold text-red-700">Jane Doe</h3>
+            <h3 className="text-2xl font-bold text-red-700">Deepak Kadam</h3>
             <p className="text-gray-600 mt-2">Founder & CEO</p>
             <img src="/images/team1.jpg" alt="Founder" className="w-24 h-24 mx-auto rounded-full mt-4"/>
           </div>
           <div className="bg-white p-6 shadow-lg rounded-lg text-center border-t-4 border-orange-500">
-            <h3 className="text-2xl font-bold text-orange-700">John Smith</h3>
+            <h3 className="text-2xl font-bold text-orange-700">Sandeep Kakard</h3>
             <p className="text-gray-600 mt-2">Director of Operations</p>
             <img src="/images/team2.jpg" alt="Director" className="w-24 h-24 mx-auto rounded-full mt-4"/>
           </div>
           <div className="bg-white p-6 shadow-lg rounded-lg text-center border-t-4 border-yellow-500">
-            <h3 className="text-2xl font-bold text-yellow-700">Sarah Johnson</h3>
+            <h3 className="text-2xl font-bold text-yellow-700">Sachin Jadhav</h3>
             <p className="text-gray-600 mt-2">Head of Community Outreach</p>
             <img src="/images/team3.jpg" alt="Community Head" className="w-24 h-24 mx-auto rounded-full mt-4"/>
           </div>
