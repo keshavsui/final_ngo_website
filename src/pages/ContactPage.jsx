@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import emailjs from "emailjs-com";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 const ContactPage = () => {
@@ -23,22 +22,30 @@ const ContactPage = () => {
   };
   
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
-    emailjs
-      .send(
-        "YOUR_SERVICE_ID", // Replace with EmailJS Service ID
-        "YOUR_TEMPLATE_ID", // Replace with EmailJS Template ID
-        formData,
-        "YOUR_PUBLIC_KEY" // Replace with EmailJS Public Key
-      )
-      .then(() => {
+  
+    try {
+      const response = await fetch("http://localhost:5000/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+  
+      const data = await response.json();
+  
+      if (data.success) {
         alert("Message sent successfully!");
         setFormData({ name: "", email: "", message: "" });
-      })
-      .catch(() => alert("Failed to send message. Try again later."));
+      } else {
+        alert("Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      alert("Server error. Please try again later.");
+      console.error("Error submitting contact form:", error);
+    }
   };
+  
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 via-teal-100 to-blue-200 py-12">
